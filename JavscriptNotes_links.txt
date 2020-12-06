@@ -1,0 +1,6 @@
+
+
+1---->why 0==false in javascript(geeks for geeks)
+2---->Why “0” is not equal to false in if condition in JavaScript ?(geeks for geeks)
+3--->Why is 0 == “” true in JavaScript(stack overflow)
+4--->https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var

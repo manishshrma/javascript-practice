@@ -1,0 +1,45 @@
+summary-
+1. npm info
+2. interpreter
+3. memory working in js
+4. thread how many?
+5.Temporal dead zone(TDZ)
+
+
+when u install express npm - i express,a node module folder also get created, note: always use npm -init so that package.json
+
+file get created, and y installing express, a new file package.lock.json also get created.
+
+node module-    
+npm is required to install express and others stuff
+npm(node package manager) init -let us allow to install express and others stuff.
+
+//////////how js interpreter work or how js work?
+///////link to follow:  https://blog.bitsrc.io/how-does-javascript-really-work-part-1-7681dd54a36d
+
+1.
+There are two ways in which we could translate the JavaScript code to machine code. When the code is compiled,
+ the machine has a better understanding of what is going to happen before the code starts to run which makes the execution faster 
+ later on, but it takes some time up front for this process.
+On the other hand, when the code is interpreted, the execution starts immediately and hence faster,
+ but lack of optimizations makes it really slow with large applications.
+ V8 is the engine that convert code to machine language.(in browser)
+ and node is the interpreter that convert ur code to machine language( node have v8 actually ) 
+
+ //////points////
+ Whenever you define a variable, constant, object, etc in your javascript program, you need some place to store it.
+  This place is nothing but the memory heap.
+When the statement var a = 10 is encountered, a location in the memory is assigned to store the value of a.
+The memory available is limited and complex programs may have a number of variable and nested objects. This makes
+ it essential to make wise use of the available memory.
+Unlike languages like C, where we need to explicitly allocate and free memory, JavaScript provides the 
+feature of automatic garbage collection. Once the object/variable is out of context and will not be of use anymore,
+ it’s memory is reclaimed and returned to the free memory pool.
+In V8 the garbage collector is named as Orinoco and has a really efficient process explained in this article.
+///threads
+The easiest way to find whether a language is single threaded or multithreaded is by knowing how many call stacks it has. JS has one,
+ so it is a single threaded language.
+
+ ////////TDZ
+ don't use the variable before its declartion. Var and funtion doesn't go in the TDZ.
+ which result in reference error.
